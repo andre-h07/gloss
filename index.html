@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gloss Gleam - Cuidado capilar natural a base de romero. Productos para revitalizar y fortalecer tu cabello. Menos químicos, más naturaleza.">
+    <title>Gloss Gleam - Cuidado Capilar Natural</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --green-olive: #607A5C;
+            --cream: #E8C59A;
+            --beige-gray: #DAD2BF;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--beige-gray) 0%, #f8f6f3 100%);
+        }
+        
+        .brand-bg {
+            background: linear-gradient(135deg, var(--green-olive) 0%, #4a6147 100%);
+        }
+        
+        .cream-bg {
+            background-color: var(--cream);
+        }
+        
+        .olive-text {
+            color: var(--green-olive);
+        }
+        
+        .rosemary-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23607A5C' fill-opacity='0.1' transform='translate(40,40) rotate(45) scale(0.75) translate(-20,-16)'%3E%3Cpath d='M10 30 V12 C10 10 12 8 15 8 H25 C28 8 30 10 30 12 V30 H10 Z M12 2 H28 V6 H12 V2 Z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .stamp {
+            background: var(--cream);
+            border: 3px dashed var(--green-olive);
+            position: relative;
+        }
+        
+        .stamp::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 8px,
+                var(--green-olive) 8px,
+                var(--green-olive) 12px
+            );
+            z-index: -1;
+        }
+        
+        .leaf-icon {
+            color: var(--green-olive);
+        }
+        
+        .texture-overlay {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255,255,255,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(96,122,92,0.1) 0%, transparent 50%);
+        }
+    .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body class="rosemary-pattern">
+    <!-- Header -->
+    <header class="brand-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-bold mb-4">GLOSS GLEAM</h1>
+            <p class="text-xl opacity-90">@gloss__gleam</p>
+            <div class="mt-6 text-lg">
+                <p class="font-semibold">"Menos químicos, más naturaleza"</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-8" style="background-image: url('https://images.unsplash.com/photo-1562314763-597449071133?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-attachment: fixed; background-size: cover; background-position: center;">
+        
+        <!-- Quiénes Somos Section -->
+        <section class="mb-12">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="stamp p-8 rounded-lg relative bg-cover bg-center" style="background-image: url('imagen-3.jpg');">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+                    <div class="relative z-10 text-center text-white">
+                        <div class="text-4xl font-bold mb-4">12</div>
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <i class="fas fa-leaf text-3xl" aria-hidden="true"></i>
+                            <i class="fas fa-seedling text-3xl" aria-hidden="true"></i>
+                            <i class="fas fa-leaf text-3xl" aria-hidden="true"></i>
+                        </div>
+                        <p class="text-sm font-semibold">Romero Natural</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-bold olive-text mb-6">¿Quiénes somos?</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Decidimos investigar sobre ingredientes naturales que pudieran ayudar a revitalizar 
+                        nuestro cabello, y fue así como descubrí los beneficios del romero para el crecimiento y 
+                        fortalecimiento del cabello. El romero es conocido por estimular la circulación 
+                        sanguínea en el cuero cabelludo, lo que puede promover el crecimiento del cabello y 
+                        mejorar su salud en general. Inspirada por esta revelación, me propuse crear mi propio 
+                        tónico capilar a base de romero. Después de meses de investigación y pruebas, 
+                        finalmente desarrollamos una fórmula que revitalizó nuestro cabello, devolviéndole su 
+                        brillo natural y fortaleciéndolo desde la raíz. Estamos emocionadas de compartir 
+                        nuestro descubrimiento con el mundo y de ayudar a otras personas a cuidar su cabello 
+                        de manera natural y saludable.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- En dónde nace Section -->
+        <section class="mb-12">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-4xl font-bold olive-text mb-6">¿En dónde nace?</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Después de experimentar un exceso de caída del cabello debido a procedimientos 
+                        químicos, decidí investigar y crear un tónico capilar a base de romero, conocido por sus 
+                        propiedades estimulantes para el crecimiento del cabello.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mt-4">
+                        El romero es rico en antioxidantes y nutrientes que pueden ayudar a fortalecer los 
+                        folículos capilares y estimular el crecimiento del cabello. Con el tiempo, noté una 
+                        reducción en la caída del cabello y un cabello más fuerte y saludable en general. 
+                        Este tónico capilar a base de romero se convirtió en una parte importante de mi rutina de 
+                        cuidado capilar, y estoy emocionada de compartir sus beneficios con otros que puedan 
+                        estar luchando contra la caída del cabello después de procedimientos químicos.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <div class="stamp p-8 rounded-lg relative bg-cover bg-center flex items-center justify-center" style="background-image: url('imagen-4.jpg'); min-height: 280px;">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+                        <div class="relative z-10 text-center text-white">
+                            <i class="fas fa-mortar-pestle text-6xl mb-4" aria-hidden="true"></i>
+                            <div class="flex justify-center space-x-1">
+                                <i class="fas fa-leaf text-sm" aria-hidden="true"></i>
+                                <i class="fas fa-seedling text-sm" aria-hidden="true"></i>
+                                <i class="fas fa-leaf text-sm" aria-hidden="true"></i>
+                            </div>
+                            <p class="text-xs mt-2">Romero fresco</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra Esencia -->
+        <section class="cream-bg rounded-lg p-8 mb-12 texture-overlay">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold olive-text mb-6">Nuestra Esencia</h2>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        En Gloss Gleam convertimos el cuidado capilar en un ritual de bienestar natural. 
+                        Nuestros productos a base de romero fortalecen, revitalizan y devuelven la confianza a tu cabello, 
+                        reflejando la esencia de quienes los eligen.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-6 text-left">
+                        <div class="bg-white bg-opacity-70 p-6 rounded-lg">
+                            <h3 class="font-bold olive-text mb-3">
+                                <i class="fas fa-leaf mr-2" aria-hidden="true"></i>Naturalidad con propósito
+                            </h3>
+                            <p class="text-gray-700">
+                                Fórmulas libres de químicos agresivos que cuidan tu cabello y el planeta.
+                            </p>
+                        </div>
+                        <div class="bg-white bg-opacity-70 p-6 rounded-lg">
+                            <h3 class="font-bold olive-text mb-3">
+                                <i class="fas fa-heart mr-2" aria-hidden="true"></i>Cuidado consciente
+                            </h3>
+                            <p class="text-gray-700">
+                                Tratamientos que respetan tu bienestar y el de la naturaleza.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos Section -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-bold olive-text text-center mb-10">Nuestros Productos</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Shampoo -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4" style="border-color: var(--green-olive);">
+                    <img src="imagen-shampoo.jpg" alt="Shampoo Revitalizante" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold olive-text text-center mb-4">Shampoo Revitalizante</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">
+                            Su fórmula a base de romero fortalece desde la raíz, ayuda a reducir la caída y aporta vitalidad, 
+                            dejando tu melena fresca, ligera y con un brillo saludable.
+                        </p>
+                        <div class="mt-4 p-3 cream-bg rounded">
+                            <p class="text-sm olive-text font-semibold text-center">Vida útil: 2.5 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tónico -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4" style="border-color: var(--green-olive);">
+                    <img src="imagen-tonico.jpg" alt="Tónico Capilar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold olive-text text-center mb-4">Tónico Capilar</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">
+                            Gracias a las propiedades del romero, promueve el crecimiento natural, 
+                            fortalece el cabello debilitado y aporta sensación de frescura y energía.
+                        </p>
+                        <div class="mt-4 p-3 cream-bg rounded">
+                            <p class="text-sm olive-text font-semibold text-center">Vida útil: 2.5 meses</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aceite -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4" style="border-color: var(--green-olive);">
+                    <img src="imagen-aceite.jpg" alt="Aceite Nutritivo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold olive-text text-center mb-4">Aceite Nutritivo</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">
+                            Tratamiento concentrado que hidrata en profundidad de medios a puntas, aportando suavidad y manejabilidad. 
+                            Rico en nutrientes, ayuda a reparar el cabello seco o dañado.
+                        </p>
+                        <div class="mt-4 p-3 cream-bg rounded">
+                            <p class="text-sm olive-text font-semibold text-center">Vida útil: 6 meses - 1 año</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modo de Uso Section -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-bold olive-text text-center mb-10">Modo de Uso</h2>
+            
+            <!-- Shampoo Instructions -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-6">
+                <h3 class="text-2xl font-bold olive-text mb-4 flex items-center">
+                    <i class="fas fa-pump-soap mr-3" aria-hidden="true"></i>Shampoo Revitalizante
+                </h3>
+                <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                    <li>Humedecer el cabello y cuero cabelludo con agua tibia</li>
+                    <li>Aplicar una cantidad moderada de shampoo</li>
+                    <li>Masajear suavemente el cuero cabelludo durante 2–3 minutos</li>
+                    <li>Distribuir la espuma hacia medios y puntas sin frotar en exceso</li>
+                    <li>Enjuagar completamente</li>
+                    <li>(Opcional) Repetir si hubo exposición a grasa o contaminación</li>
+                </ol>
+            </div>
+
+            <!-- Tónico Instructions -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-6">
+                <h3 class="text-2xl font-bold olive-text mb-4 flex items-center">
+                    <i class="fas fa-tint mr-3" aria-hidden="true"></i>Tónico Capilar
+                </h3>
+                <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                    <li>Agitar el frasco antes de usar</li>
+                    <li>Aplicar sobre cuero cabelludo limpio o seco, especialmente en zonas deseadas</li>
+                    <li>Masajear con yemas de los dedos 2–3 minutos</li>
+                    <li>No enjuagar</li>
+                    <li>Usar 3-4 veces por semana</li>
+                </ol>
+            </div>
+
+            <!-- Aceite Instructions -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-bold olive-text mb-4 flex items-center">
+                    <i class="fas fa-oil-can mr-3" aria-hidden="true"></i>Aceite Nutritivo
+                </h3>
+                <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                    <li>Aplicar de 5 a 10 gotas de medios a puntas</li>
+                    <li>No enjuagar</li>
+                    <li>Usar 2-3 veces por semana o al sentir cabello seco/sin brillo</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Recomendaciones Section -->
+        <section class="cream-bg rounded-lg p-8 mb-12">
+            <h2 class="text-4xl font-bold olive-text text-center mb-8">Recomendaciones</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-thermometer-half text-4xl leaf-icon mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold olive-text mb-2">Temperatura</h3>
+                    <p class="text-gray-700">Guárdalos en un lugar fresco y seco</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-sun text-4xl leaf-icon mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold olive-text mb-2">Luz Solar</h3>
+                    <p class="text-gray-700">Evita la exposición directa al sol o al calor extremo</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-lock text-4xl leaf-icon mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold olive-text mb-2">Sellado</h3>
+                    <p class="text-gray-700">Mantén bien cerrados los envases después de cada uso</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="brand-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-4">GLOSS GLEAM</h3>
+            <p class="text-lg mb-4">@gloss__gleam</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://www.instagram.com/gloss__gleam" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Gloss Gleam">
+                    <i class="fab fa-instagram text-2xl hover:opacity-75 cursor-pointer"></i>
+                </a>
+            </div>
+            <div class="border-t border-white border-opacity-20 pt-6">
+                <p class="text-lg font-semibold">"Gloss Gleam no es solo un producto, es una experiencia de cuidado natural y transformador"</p>
+                <p class="mt-2 opacity-75">Menos químicos, más naturaleza</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://w.app/1192463366" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
